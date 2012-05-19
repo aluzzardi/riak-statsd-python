@@ -14,7 +14,7 @@ import riak_statsd
 
 stats = statsd.StatsClient()
 
-db = self.db = riak.RiakClient('localhost', 1234,
+db = riak.RiakClient('localhost', 1234,
         transport_class=riak_statsd.create_proxy(riak.RiakHttpTransport, stats))
 
 ```
