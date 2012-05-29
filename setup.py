@@ -5,8 +5,8 @@ except ImportError:
 
 
 setup(
-    name='riak_statsd',
-    version='0.0.1',
+    name='riak-statsd',
+    version='0.1.0',
     description='Transport proxy for instrumenting Riak clients',
     author='Andrea Luzzardi',
     author_email='andrea@luzzardi.com',
@@ -16,5 +16,13 @@ setup(
             'statsd>=0.5.1',
             'riak>=1.3.0'
     ],
-    license='MIT'
+    classifiers = [
+        'Programming Language :: Python',
+        'Development Status :: 4 - Beta',
+        'Environment :: Other Environment',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development :: Libraries :: Python Modules'
+        ]
 )
